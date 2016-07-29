@@ -9,9 +9,14 @@ ENV HOME=/home/app
 # Install dependencies in container
 COPY package.json npm-shrinkwrap.json $HOME/simple/
 RUN chown -R app:app $HOME/*
-
 USER app
 WORKDIR $HOME/simple
 RUN npm install
+
+# Build the app into the image
+USER root
+COPY . $HOME/simple
+RUN chown -R app:app $HOME/*
+USER app
 
 CMD [ "node" , "index.js" ]
