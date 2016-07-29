@@ -1,0 +1,5 @@
+simple:
+  build: .
+  command: echo 'ready'
+  volumes:
+    - .:/home/app/simple
