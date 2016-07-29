@@ -1,17 +1,15 @@
 {
-  "name": "simple-node",
+  "name": "simple",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "David R Poindexter III <drpoindexter@gmail.com> (http://vcard.davidrpoindexter.com/)",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "express": "4.14.0"
-  },
-  "devDependencies": {},
-  "description": ""
+    "express": "^4.14.0"
+  }
 }

@@ -3,3 +3,4 @@ simple:
   command: echo 'ready'
   volumes:
     - .:/home/app/simple
+    - /home/app/chat/node_modules
